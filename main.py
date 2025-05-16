@@ -1,14 +1,12 @@
-# First, import the warnings module
 import warnings
 import os
 
-# Filter out RuntimeWarnings
+# Filters out RuntimeWarnings
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
-# Hide pygame welcome message
+# Hides pygame welcome message
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
 
-# Now import pygame (after the warnings filter)
 import pygame
 from player import Player
 from asteroid import Asteroid
